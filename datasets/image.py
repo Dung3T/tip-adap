@@ -7,14 +7,14 @@ from .oxford_pets import OxfordPets
 template = ['a photo of a {}.']
 
 
-class Caltech101(DatasetBase):
+class Image(DatasetBase):
 
     dataset_dir = 'image'
 
     def __init__(self, root, num_shots):
         self.dataset_dir = os.path.join(root, self.dataset_dir)
         self.image_dir = os.path.join(self.dataset_dir, 'dog')
-        self.split_path = os.path.join(self.dataset_dir, 'output.json')
+        self.split_path = os.path.join(self.dataset_dir, 'output3.json')
 
         self.template = template
 
