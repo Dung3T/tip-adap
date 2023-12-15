@@ -1,9 +1,10 @@
 from .oxford_pets import OxfordPets
 from .image import Image
-
+from .gender import Gender
 dataset_list = {
                 "oxford_pets": OxfordPets,
                 "image": Image,
+                "gender": Gender,
                 }
 
 
